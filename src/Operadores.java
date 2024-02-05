@@ -1,16 +1,12 @@
 public class Operadores {
 
-    public static void main(String args[]) {
-        operacoesLogicas();
-    }
+    public static void main(String[] args) {
 
-    private static void operacoesLogicas() {
-        System.out.println("operacoesLogicas");
+        int numeroPrimitivo = 42;
 
-        int num1 = 10;
-        int num2 = 10;
+        Integer numeroWrapper = Integer.valueOf(numeroPrimitivo);
 
-        boolean respondaDentro10 = num1 >= 1 && num1 <=10;
-        System.out.println("respondaDentro10: " + respondaDentro10);
+        System.out.println("Variável primitiva: " + numeroPrimitivo);
+        System.out.println("Variável wrapper: " + numeroWrapper);
     }
 }
